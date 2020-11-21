@@ -1,0 +1,35 @@
+{
+	"require": {
+		"php":"^7.0",
+        "ext-bz2":"*",
+        "ext-curl":"*",
+        "ext-mbstring":"*",
+        "ext-bcmath":"*",
+        "ext-json":"*",
+		"ext-zip": "*",
+		"ext-fileinfo": "*",
+		"behat/behat": "3.5.0",
+		"behat/mink-extension": "2.3.1",
+		"drupal/drupal-extension": "*",
+		"twig/twig": "*",
+		"bex/behat-screenshot": "*",
+		"kolev/multilingual-extension": "dev-master",
+		"guzzlehttp/guzzle": "*",
+		"dmore/behat-chrome-extension": "^1.2.0",
+		"emuse/behat-html-formatter": "*",
+		"joshtronic/php-loremipsum": "dev-master"
+	},
+    "require-dev": {
+		"phpunit/phpunit": "^6"
+	},
+	"config": {
+		"bin-dir": "bin/",
+		"sort-packages": true
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Traits\\": "features/bootstrap/Traits",
+			"Contexts\\": "features/bootstrap"
+		}
+	}
+}
